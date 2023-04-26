@@ -1,0 +1,110 @@
+.courseslist-container{
+    width:80%;
+    height:500px;
+    border:2px solid rgb(169 169 232);
+    border-radius: 15px;
+    background-color: rgba(206, 206, 246, 0.319);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.courseslist-container h1:hover{
+    color: rgb(128, 128, 238);
+}
+
+.courseslist-container h2:hover{
+    color: rgb(128, 128, 238);
+}
+
+.courseslist-container p:hover{
+    color: rgb(128, 128, 238);
+}
+
+
+.courseslist-container h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding:30px 0px;
+    color: rgb(128, 128, 238);
+
+}
+
+
+.fullstack{
+    display: flex;
+    margin-top: 5px;
+    font-size: 20px;
+}
+#frontend {
+    padding:4px 2px;
+}
+#frondend p{
+    padding:4px 0px;
+}
+
+#backend h2{
+    padding:4px 0px;
+    padding-left: 113px;
+}
+#backend p {
+    padding-left: 113px;
+}
+
+#button{
+    margin-top:8px;
+    padding: 10px;
+    background-color: rgb(128, 128, 243);
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Acme', sans-serif;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+}
+#button:hover{
+    background-color: rgb(103, 103, 238);
+    color: white;
+}
+
+/* mediaquery for courseslistpage */
+@media only screen and (max-width:1138px) {
+    .courseslist-container{
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width:800px) {
+    .courseslist-container{
+        width:95%;
+        height:70%;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    .fullstack{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .frontend{
+        padding: 0px 0px;
+        margin: 0px 0px;
+    }
+    .backend{
+        padding: 0px 0px;
+        margin: 0px 0px;
+
+    }
+}
+
+

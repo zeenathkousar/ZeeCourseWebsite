@@ -1,0 +1,67 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style 
+      style 
+        include ../static/style.css
+        include ../static/stylejoincourse.css
+
+block content
+        div.contentdiv
+            h1 Join Free Full Stack Course
+            form(action="/joincourse",method="post")
+                div.join-div
+                    input(type="text",class="myinput",name="name",placeholder="Enter Your Name")
+                    input(type="text",class="myinput",name="qualification",placeholder="Enter Your Qualification")
+                    input(type="text",class="myinput",name="passOutYr",placeholder="Enter Your PassOutYear")
+                    input(type="text",class="myinput",name="Email",placeholder="Enter Your Email Id")
+
+                    .courses
+                        .section  
+                            input(type="checkbox",id="HTML",name="course1" value="HTML")
+                            label(for="HTML")
+                                | HTML
+                        .section
+                            input(type="checkbox",id="CSS",name="course2" value="CSS")
+                            label(for="CSS")
+                                | CSS
+                        .section
+                            input(type="checkbox",id="Bootstrap",name="course3" value="Bootstrap")
+                            label(for="Bootstrap")
+                                | Bootstrap
+                        .section
+                            input(type="checkbox",id="JavaScript",name="course4" value="JavaScript")
+                            label(for="JavaScript")
+                                | JavaScript
+                        .section
+                            input(type="checkbox",id="ReactJS",name="course5" value="ReactJS")
+                            label(for="ReactJS")
+                                | ReactJS
+                        .section
+                            input(type="checkbox",id="VeuJS",name="course6" value="VeuJS")
+                            label(for="VeuJS")
+                                | VeuJS
+                        .section
+                            input(type="checkbox",id="FrontEnd",name="course7" value="FrontEnd")
+                            label(for="FrontEnd")
+                                | FrontEnd
+                        .section
+                            input(type="checkbox",id="NodeJS & ExpressJS",name="course8" value="NodeJS & ExpressJS")
+                            label(for="NodeJS & ExpressJS")
+                                | NodeJS And ExpressJS
+                        .section
+                            input(type="checkbox",id="Django",name="course9" value="Django")
+                            label(for="Django")
+                                | Django
+                        .section
+                            input(type="checkbox",id="Template Engines",name="course10" value="Template Engines")
+                            label(for="Template Engines")
+                                | Template Engines
+                        .section
+                            input(type="checkbox",id="Deployment",name="course11" value="Deployment")
+                            label(for="Deployment")
+                                | Deployment
+                    button(id="btn",onclick="MyFuncJoin()")
+                        | submit

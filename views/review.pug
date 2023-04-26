@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+ 
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/stylejoincourse.css
+        include ../static/stylereview.css
+
+
+block content
+        div.contentdiv
+            h1 Give Just One Min To Review My Website Design!!!
+            form(action="/joincourse",method="post")
+                div.join-div
+                    input(type="text",class="myinput",name="name",placeholder="Enter Your Name")
+                    input(type="text",class="myinput",name="Email",placeholder="Enter Your Email Id")
+                    input(type="textarea",rows="10",cols="50",class="myinput",name="qualification",placeholder="Describe how u feel about the design  website")
+                    button(id="btn",onclick="MyFuncReview()")
+                        |submit

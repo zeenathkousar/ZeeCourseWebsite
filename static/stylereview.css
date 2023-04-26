@@ -1,0 +1,30 @@
+.join-div input{
+    margin-top: 12px;
+    padding: 12px;
+}
+.contentdiv h1{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+#btn{
+    margin-top:8px;
+    padding: 10px;
+    background-color: rgb(128, 128, 243);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(103, 103, 238);
+    color: white;
+}
+
+
+#footer{
+    margin-top: 132px;
+}

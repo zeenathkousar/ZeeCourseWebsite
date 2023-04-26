@@ -1,0 +1,27 @@
+//- tut79-template inheritance..can store reprtative code like header footer at once using pug.
+//as title and footer will be same in all pages writing them here
+//changing endpoint in app.js as home.pug
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Zee Programming Course
+    block scripts
+    block style
+  body
+    nav#navbar
+      
+      div#logo
+        img(src="../static/img/logo.jpg",alt="Logo")
+        | Zee
+      ul
+        li.start #[a(href="/") Home]
+        li #[a(href="/about") About]
+        li #[a(href="/courseslist") CoursesList]
+        li #[a(href="/joincourse") JoinCourse] 
+        li #[a(href="/review") Review] 
+    block content
+    section#footer 
+        | Copyright © 2022  ZeeFullStackCourse.com | All rights reserved
+
+      

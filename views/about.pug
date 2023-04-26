@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style
+      style
+        include ../static/style.css
+        include ../static/styleabout.css
+  
+block content 
+    div.about-container 
+        h2 About Course Initiative 
+        p  In this course, u learn smoothly all technologies one by one and then we integrate all into one project.
+        p  This course is designed in the way as i self-learned all these full stack technologies.
+        p  Join this Free Course by clicking on JoinCourse Tab.
+        p  Happy Learning !!
+        #button(onclick="window.open('/joincourse') ")
+              |  JOIN
+
+
+
+
+    

@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    block content
+      section#intro
+        div Welcome to Zee Programming Course 
+        div.small Learn like a game  
+      section#cards 
+        h2 Courses Info
+        div.cardcontainer
+          div.carddiv 
+            h3 A FrontEnd Course 
+            div.card-box 
+              div.card-img
+                img(src="../static/img/frontend.png")
+              div.card-content
+                p we learn HTML, CSS, Bootstrap, Js, ReactJs, VueJs, Angular, DataStructures and Algorithms.
+          div.carddiv 
+            h3 A Backend Course 
+            div.card-box 
+              div.card-img
+                img(src="../static/img/backend.png")
+              div.card-content
+                p Here we learn NodeJs, Express, Pug, Ejs, MangoDB, SQL, Python, Django, Java, Spring Boot.
+          div.carddiv 
+            h3 A Deployment Course
+            div.card-box 
+              div.card-img
+                img(src="../static/img/deploy.png")
+              div.card-content
+                p Here we will host our website into the server using Github and Heroku.
+          
+      section#sponcers 
+        h2 Sponcers
+        div#sponcers-div
+          img(src="../static/img/spon1.png", alt="sponcer1 image"  class="spImage")
+          img(src="../static/img/spon2.png", alt="sponcer2 image"  class="spImage")
+          img(src="../static/img/spon3.png", alt="sponcer3 image"  class="spImage")
+          img(src="../static/img/spon4.png", alt="sponcer4 image"  class="spImage")
+
+
+    section#footer 
+        | Copyright © 2022  ZeeFullStackCourse.com | All rights reserved
+
+    script
+      include ../static/index.js             

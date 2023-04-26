@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style
+      style
+        include ../static/style.css
+        include ../static/stylecourseslist.css
+  
+block content 
+    div.courseslist-container 
+        h1 Courses list
+        .fullstack
+          #frontend
+              h2 Front End             
+              p  Computer Basics       
+              p  HTML                          
+              p  CSS                   
+              p  Bootstrap               
+              p  Tailwind CSS            
+              p  JavaScript            
+              p  ReactJs                 
+              p  VeuJs                 
+              p  Angular                
+              p  VannilaJS               
+              p  Web Design             
+            
+          #backend 
+              h2   BackEnd
+              p    NodeJs
+              p    ExpressJs        
+              p    Pug Template Engine
+              p    EJS Template Engine
+              p    MongoDB And Mongoose
+              p    SQL
+              p    Java Spring Boot
+              p    Python
+              p    Django 
+              p    Jinja Template Engine
+              p    Machine Learning
+        #button(onclick="window.open('/joincourse') ")
+              |  JOIN
+
+
